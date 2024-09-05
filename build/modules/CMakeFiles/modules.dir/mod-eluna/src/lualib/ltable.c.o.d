@@ -1,0 +1,48 @@
+modules/CMakeFiles/modules.dir/mod-eluna/src/lualib/ltable.c.o: \
+  /home/haelius/haeliuscore-allraces/modules/mod-eluna/src/lualib/ltable.c \
+  /usr/include/string.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/stdc-predef.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/lib/llvm-18/lib/clang/18/include/stddef.h \
+  /usr/lib/llvm-18/lib/clang/18/include/__stddef_size_t.h \
+  /usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/strings.h \
+  /home/haelius/haeliuscore-allraces/modules/mod-eluna/src/lualib/lua.h \
+  /usr/lib/llvm-18/lib/clang/18/include/stdarg.h \
+  /usr/lib/llvm-18/lib/clang/18/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/llvm-18/lib/clang/18/include/__stdarg_va_list.h \
+  /usr/lib/llvm-18/lib/clang/18/include/__stdarg_va_arg.h \
+  /usr/lib/llvm-18/lib/clang/18/include/__stdarg___va_copy.h \
+  /usr/lib/llvm-18/lib/clang/18/include/__stdarg_va_copy.h \
+  /usr/lib/llvm-18/lib/clang/18/include/__stddef_ptrdiff_t.h \
+  /usr/lib/llvm-18/lib/clang/18/include/__stddef_wchar_t.h \
+  /usr/lib/llvm-18/lib/clang/18/include/__stddef_max_align_t.h \
+  /usr/lib/llvm-18/lib/clang/18/include/__stddef_offsetof.h \
+  /home/haelius/haeliuscore-allraces/modules/mod-eluna/src/lualib/luaconf.h \
+  /usr/lib/llvm-18/lib/clang/18/include/limits.h /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /home/haelius/haeliuscore-allraces/modules/mod-eluna/src/lualib/ldebug.h \
+  /home/haelius/haeliuscore-allraces/modules/mod-eluna/src/lualib/lstate.h \
+  /home/haelius/haeliuscore-allraces/modules/mod-eluna/src/lualib/lobject.h \
+  /home/haelius/haeliuscore-allraces/modules/mod-eluna/src/lualib/llimits.h \
+  /home/haelius/haeliuscore-allraces/modules/mod-eluna/src/lualib/ltm.h \
+  /home/haelius/haeliuscore-allraces/modules/mod-eluna/src/lualib/lzio.h \
+  /home/haelius/haeliuscore-allraces/modules/mod-eluna/src/lualib/lmem.h \
+  /home/haelius/haeliuscore-allraces/modules/mod-eluna/src/lualib/ldo.h \
+  /home/haelius/haeliuscore-allraces/modules/mod-eluna/src/lualib/lgc.h \
+  /home/haelius/haeliuscore-allraces/modules/mod-eluna/src/lualib/lstring.h \
+  /home/haelius/haeliuscore-allraces/modules/mod-eluna/src/lualib/ltable.h \
+  /home/haelius/haeliuscore-allraces/modules/mod-eluna/src/lualib/lvm.h

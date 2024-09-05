@@ -1,0 +1,729 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      The system is: Linux - 6.8.0-41-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/haelius/haeliuscore-allraces/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/clang 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /home/haelius/haeliuscore-allraces/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-mXSOod"
+      binary: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-mXSOod"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-mXSOod'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e94f4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e94f4.dir/build.make CMakeFiles/cmTC_e94f4.dir/build
+        gmake[1]: Entering directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-mXSOod'
+        Building CXX object CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-mXSOod -v -fcoverage-compilation-dir=/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-mXSOod -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward
+         /usr/lib/llvm-18/lib/clang/18/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_e94f4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e94f4.dir/link.txt --verbose=1
+        /usr/bin/clang++  -v CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e94f4 
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e94f4 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-mXSOod'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13]
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13]
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward]
+          add: [/usr/lib/llvm-18/lib/clang/18/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/llvm-18/lib/clang/18/include] ==> [/usr/lib/llvm-18/lib/clang/18/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/llvm-18/lib/clang/18/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-mXSOod']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e94f4/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e94f4.dir/build.make CMakeFiles/cmTC_e94f4.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-mXSOod']
+        ignore line: [Building CXX object CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-mXSOod -v -fcoverage-compilation-dir=/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-mXSOod -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward]
+        ignore line: [ /usr/lib/llvm-18/lib/clang/18/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_e94f4]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e94f4.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang++  -v CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e94f4 ]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e94f4 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e94f4] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_e94f4.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-B6GRVQ"
+      binary: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-B6GRVQ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-B6GRVQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_af5b5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_af5b5.dir/build.make CMakeFiles/cmTC_af5b5.dir/build
+        gmake[1]: Entering directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-B6GRVQ'
+        Building C object CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o
+        /usr/bin/clang   -v -MD -MT CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-B6GRVQ -v -fcoverage-compilation-dir=/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-B6GRVQ -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/llvm-18/lib/clang/18/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_af5b5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af5b5.dir/link.txt --verbose=1
+        /usr/bin/clang  -v CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o -o cmTC_af5b5 
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_af5b5 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-B6GRVQ'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/llvm-18/lib/clang/18/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/llvm-18/lib/clang/18/include] ==> [/usr/lib/llvm-18/lib/clang/18/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/llvm-18/lib/clang/18/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-B6GRVQ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_af5b5/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_af5b5.dir/build.make CMakeFiles/cmTC_af5b5.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-B6GRVQ']
+        ignore line: [Building C object CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/clang   -v -MD -MT CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-B6GRVQ -v -fcoverage-compilation-dir=/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-B6GRVQ -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/llvm-18/lib/clang/18/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_af5b5]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af5b5.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang  -v CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o -o cmTC_af5b5 ]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_af5b5 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_af5b5] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_af5b5.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "src/cmake/compiler/clang/settings.cmake:37 (check_cxx_source_compiles)"
+      - "src/cmake/platform/unix/settings.cmake:53 (include)"
+      - "src/cmake/macros/CheckPlatform.cmake:27 (include)"
+      - "CMakeLists.txt:94 (include)"
+    checks:
+      - "Performing Test CLANG_HAVE_PROPER_CHARCONV"
+    directories:
+      source: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-RizEru"
+      binary: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-RizEru"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/haelius/haeliuscore-allraces/src/cmake/macros"
+    buildResult:
+      variable: "CLANG_HAVE_PROPER_CHARCONV"
+      cached: true
+      stdout: |
+        Change Dir: '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-RizEru'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e643e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e643e.dir/build.make CMakeFiles/cmTC_e643e.dir/build
+        gmake[1]: Entering directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-RizEru'
+        Building CXX object CMakeFiles/cmTC_e643e.dir/src.cxx.o
+        /usr/bin/clang++ -DCLANG_HAVE_PROPER_CHARCONV  -std=gnu++20 -MD -MT CMakeFiles/cmTC_e643e.dir/src.cxx.o -MF CMakeFiles/cmTC_e643e.dir/src.cxx.o.d -o CMakeFiles/cmTC_e643e.dir/src.cxx.o -c /home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-RizEru/src.cxx
+        Linking CXX executable cmTC_e643e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e643e.dir/link.txt --verbose=1
+        /usr/bin/clang++ CMakeFiles/cmTC_e643e.dir/src.cxx.o -o cmTC_e643e 
+        gmake[1]: Leaving directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-RizEru'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "deps/boost/CMakeLists.txt:48 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test boost_filesystem_copy_links_without_NO_SCOPED_ENUM"
+    directories:
+      source: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-f1EJYh"
+      binary: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-f1EJYh"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/haelius/haeliuscore-allraces/src/cmake/macros"
+    buildResult:
+      variable: "boost_filesystem_copy_links_without_NO_SCOPED_ENUM"
+      cached: true
+      stdout: |
+        Change Dir: '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-f1EJYh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_955e4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_955e4.dir/build.make CMakeFiles/cmTC_955e4.dir/build
+        gmake[1]: Entering directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-f1EJYh'
+        Building CXX object CMakeFiles/cmTC_955e4.dir/src.cxx.o
+        /usr/bin/clang++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -Dboost_filesystem_copy_links_without_NO_SCOPED_ENUM  -std=c++11 -std=gnu++20 -MD -MT CMakeFiles/cmTC_955e4.dir/src.cxx.o -MF CMakeFiles/cmTC_955e4.dir/src.cxx.o.d -o CMakeFiles/cmTC_955e4.dir/src.cxx.o -c /home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-f1EJYh/src.cxx
+        Linking CXX executable cmTC_955e4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_955e4.dir/link.txt --verbose=1
+        /usr/bin/clang++  -std=c++11 CMakeFiles/cmTC_955e4.dir/src.cxx.o -o cmTC_955e4  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0 /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0 /usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.83.0 /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.83.0 
+        gmake[1]: Leaving directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-f1EJYh'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "deps/fmt/CMakeLists.txt:24 (check_symbol_exists)"
+    checks:
+      - "Looking for strtod_l"
+    directories:
+      source: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-XzA3WE"
+      binary: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-XzA3WE"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/haelius/haeliuscore-allraces/src/cmake/macros"
+    buildResult:
+      variable: "HAVE_STRTOD_L"
+      cached: true
+      stdout: |
+        Change Dir: '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-XzA3WE'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d7bcf/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d7bcf.dir/build.make CMakeFiles/cmTC_d7bcf.dir/build
+        gmake[1]: Entering directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-XzA3WE'
+        Building C object CMakeFiles/cmTC_d7bcf.dir/CheckSymbolExists.c.o
+        /usr/bin/clang    -MD -MT CMakeFiles/cmTC_d7bcf.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_d7bcf.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_d7bcf.dir/CheckSymbolExists.c.o -c /home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-XzA3WE/CheckSymbolExists.c
+        /home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-XzA3WE/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'strtod_l'
+            8 |   return ((int*)(&strtod_l))[argc];
+              |                   ^
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_d7bcf.dir/build.make:79: CMakeFiles/cmTC_d7bcf.dir/CheckSymbolExists.c.o] Error 1
+        gmake[1]: Leaving directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-XzA3WE'
+        gmake: *** [Makefile:127: cmTC_d7bcf/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "deps/jemalloc/CMakeLists.txt:15 (CHECK_SYMBOL_EXISTS)"
+    checks:
+      - "Looking for MADV_FREE"
+    directories:
+      source: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-T6GQ3X"
+      binary: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-T6GQ3X"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/haelius/haeliuscore-allraces/src/cmake/macros"
+    buildResult:
+      variable: "HAVE_MADV_FREE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-T6GQ3X'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_68ec7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_68ec7.dir/build.make CMakeFiles/cmTC_68ec7.dir/build
+        gmake[1]: Entering directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-T6GQ3X'
+        Building C object CMakeFiles/cmTC_68ec7.dir/CheckSymbolExists.c.o
+        /usr/bin/clang    -MD -MT CMakeFiles/cmTC_68ec7.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_68ec7.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_68ec7.dir/CheckSymbolExists.c.o -c /home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-T6GQ3X/CheckSymbolExists.c
+        Linking C executable cmTC_68ec7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68ec7.dir/link.txt --verbose=1
+        /usr/bin/clang CMakeFiles/cmTC_68ec7.dir/CheckSymbolExists.c.o -o cmTC_68ec7 
+        gmake[1]: Leaving directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-T6GQ3X'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFileCXX.cmake:89 (try_compile)"
+      - "src/cmake/macros/FindFilesystem.cmake:149 (check_include_file_cxx)"
+      - "deps/stdfs/CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Looking for C++ include filesystem"
+    directories:
+      source: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-5cEluh"
+      binary: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-5cEluh"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/haelius/haeliuscore-allraces/src/cmake/macros"
+    buildResult:
+      variable: "_CXX_FILESYSTEM_HAVE_HEADER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-5cEluh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d2fdf/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d2fdf.dir/build.make CMakeFiles/cmTC_d2fdf.dir/build
+        gmake[1]: Entering directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-5cEluh'
+        Building CXX object CMakeFiles/cmTC_d2fdf.dir/CheckIncludeFile.cxx.o
+        /usr/bin/clang++   -std=gnu++20 -MD -MT CMakeFiles/cmTC_d2fdf.dir/CheckIncludeFile.cxx.o -MF CMakeFiles/cmTC_d2fdf.dir/CheckIncludeFile.cxx.o.d -o CMakeFiles/cmTC_d2fdf.dir/CheckIncludeFile.cxx.o -c /home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-5cEluh/CheckIncludeFile.cxx
+        Linking CXX executable cmTC_d2fdf
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2fdf.dir/link.txt --verbose=1
+        /usr/bin/clang++ CMakeFiles/cmTC_d2fdf.dir/CheckIncludeFile.cxx.o -o cmTC_d2fdf 
+        gmake[1]: Leaving directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-5cEluh'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "src/cmake/macros/FindFilesystem.cmake:197 (check_cxx_source_compiles)"
+      - "deps/stdfs/CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Performing Test CXX_FILESYSTEM_NO_LINK_NEEDED"
+    directories:
+      source: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-zi85Wo"
+      binary: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-zi85Wo"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/haelius/haeliuscore-allraces/src/cmake/macros"
+    buildResult:
+      variable: "CXX_FILESYSTEM_NO_LINK_NEEDED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-zi85Wo'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_67615/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_67615.dir/build.make CMakeFiles/cmTC_67615.dir/build
+        gmake[1]: Entering directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-zi85Wo'
+        Building CXX object CMakeFiles/cmTC_67615.dir/src.cxx.o
+        /usr/bin/clang++ -DCXX_FILESYSTEM_NO_LINK_NEEDED  -std=gnu++20 -MD -MT CMakeFiles/cmTC_67615.dir/src.cxx.o -MF CMakeFiles/cmTC_67615.dir/src.cxx.o.d -o CMakeFiles/cmTC_67615.dir/src.cxx.o -c /home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-zi85Wo/src.cxx
+        Linking CXX executable cmTC_67615
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67615.dir/link.txt --verbose=1
+        /usr/bin/clang++ CMakeFiles/cmTC_67615.dir/src.cxx.o -o cmTC_67615 
+        gmake[1]: Leaving directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-zi85Wo'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "deps/threads/CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-pQhNs9"
+      binary: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-pQhNs9"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/haelius/haeliuscore-allraces/src/cmake/macros"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-pQhNs9'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f6745/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f6745.dir/build.make CMakeFiles/cmTC_f6745.dir/build
+        gmake[1]: Entering directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-pQhNs9'
+        Building C object CMakeFiles/cmTC_f6745.dir/src.c.o
+        /usr/bin/clang -DCMAKE_HAVE_LIBC_PTHREAD   -MD -MT CMakeFiles/cmTC_f6745.dir/src.c.o -MF CMakeFiles/cmTC_f6745.dir/src.c.o.d -o CMakeFiles/cmTC_f6745.dir/src.c.o -c /home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-pQhNs9/src.c
+        Linking C executable cmTC_f6745
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6745.dir/link.txt --verbose=1
+        /usr/bin/clang CMakeFiles/cmTC_f6745.dir/src.c.o -o cmTC_f6745 
+        gmake[1]: Leaving directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-pQhNs9'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/usr/share/cmake-3.28/Modules/FindBZip2.cmake:93 (CHECK_SYMBOL_EXISTS)"
+      - "deps/bzip2/CMakeLists.txt:15 (find_package)"
+    checks:
+      - "Looking for BZ2_bzCompressInit"
+    directories:
+      source: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-sV0W8H"
+      binary: "/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-sV0W8H"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/haelius/haeliuscore-allraces/src/cmake/macros"
+    buildResult:
+      variable: "BZIP2_NEED_PREFIX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-sV0W8H'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6bd7d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6bd7d.dir/build.make CMakeFiles/cmTC_6bd7d.dir/build
+        gmake[1]: Entering directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-sV0W8H'
+        Building C object CMakeFiles/cmTC_6bd7d.dir/CheckSymbolExists.c.o
+        /usr/bin/clang    -MD -MT CMakeFiles/cmTC_6bd7d.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_6bd7d.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_6bd7d.dir/CheckSymbolExists.c.o -c /home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-sV0W8H/CheckSymbolExists.c
+        Linking C executable cmTC_6bd7d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6bd7d.dir/link.txt --verbose=1
+        /usr/bin/clang CMakeFiles/cmTC_6bd7d.dir/CheckSymbolExists.c.o -o cmTC_6bd7d  /usr/lib/x86_64-linux-gnu/libbz2.so 
+        gmake[1]: Leaving directory '/home/haelius/haeliuscore-allraces/build/CMakeFiles/CMakeScratch/TryCompile-sV0W8H'
+        
+      exitCode: 0
+...
